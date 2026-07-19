@@ -1,0 +1,21 @@
+@import "./_variables.css";
+@import "./_typography.css";
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: var(--nav-bg-color);
+
+    li a {
+        padding: 16px;
+        display: block;
+        text-decoration: none;
+        color: white;
+    }
+}
