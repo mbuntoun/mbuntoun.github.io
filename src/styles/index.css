@@ -59,6 +59,7 @@ main {
         text-align: justify;
         h2 {
             text-align: left;
+            color: var(--color-nav-bg);
         }
     }
 
