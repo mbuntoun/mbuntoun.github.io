@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&family=Mozilla+Text:wght@200..700&family=Stack+Sans+Headline:wght@200..700&display=swap');
+
 @import "./_variables.css";
 @import "./_typography.css";
 
@@ -6,16 +8,54 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: var(--color-bg);
+}
+
 header nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    background-color: var(--nav-bg-color);
+    background-color: var(--color-nav-bg);
 
     li a {
-        padding: 16px;
+        padding: 16px 24px;
         display: block;
         text-decoration: none;
         color: white;
+        font-family: var(--text-nav);
+        font-weight: bold;
+
+        &:hover {
+            background-color: var(--color-light-pink);
+        }
+    }
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.profile {
+    /* background-color: var(--color-profile); */
+    font-family: var(--text-body);
+    display: flex;
+    padding: 16px;
+    gap: 16px;
+
+    .pic {
+        width: 30%;
+        background-image: url("../assets/profile-pic.jpeg");
+        background-position: center;
+        background-size: cover;
+        border-radius: 50%;
+        border: 5px solid var(--color-light-pink);
+    }
+
+    .summary {
+        width: 70%;
+        line-height: 150%;
+        text-align: justify;
     }
 }
