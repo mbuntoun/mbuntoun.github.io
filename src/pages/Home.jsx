@@ -1,10 +1,11 @@
 import Profile from "../components/Profile"
+import Education from "../components/Education"
 
 const Home = () => (
     <main>
         <Profile />
-        {/* <Education />
-        <Experiences /> */}
+        <hr />
+        <Education />
     </main>
 )
 

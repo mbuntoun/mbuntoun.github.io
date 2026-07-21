@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&family=Mozilla+Text:wght@200..700&family=Stack+Sans+Headline:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mozilla+Text:wght@200..700&family=Stack+Sans+Headline:wght@200..700&display=swap');
 
 @import "./_variables.css";
 @import "./_typography.css";
@@ -12,6 +12,7 @@ body {
     background-color: var(--color-bg);
 }
 
+/* Navigation */
 header nav ul {
     list-style: none;
     display: flex;
@@ -37,8 +38,13 @@ main {
     margin: 0 auto;
 }
 
+hr {
+    height: 3px;
+    background-color: var(--color-nav-bg);
+}
+
+/* Profile section */
 .profile {
-    font-family: var(--text-body);
     display: flex;
     padding: 36px;
     gap: 24px;
@@ -55,7 +61,6 @@ main {
 
     .summary {
         width: 70%;
-        line-height: 150%;
         text-align: justify;
         h2 {
             text-align: left;
@@ -73,5 +78,38 @@ main {
                 text-align: center;
             }
         }
+    }
+}
+
+/* Education section */
+.education {
+    padding: 24px 36px;
+    list-style: none;
+
+    li {
+        margin-bottom: 24px;
+        padding: 16px;
+        border: 2px solid var(--color-dark-blue);
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px var(--color-dark-blue);
+        /* background-color: #FFEBD3; */
+
+        &:last-child {
+            margin-bottom: 0;;
+        }
+    }
+
+    h4 {
+        color: var(--color-dark-blue);
+        a {
+            color: var(--color-dark-blue);
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    h4, p {
+        margin-bottom: 8px;
     }
 }

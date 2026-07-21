@@ -1,0 +1,12 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--text-body);
+}
+
+p {
+    font-family: var(--text-body);
+    line-height: 130%;
+}
+
+a {
+    text-decoration: none;
+}

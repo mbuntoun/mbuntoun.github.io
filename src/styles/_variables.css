@@ -1,10 +1,10 @@
 :root {
     --color-nav-bg: #FF90BC;
     --color-bg: #F9F9E0;
-    --color-profile: #8ACDD7;
+    --color-light-blue: #8ACDD7;
     --color-light-pink: #FFC0D9;
+    --color-dark-blue: #67A2C5;
 
     --text-nav: "Stack Sans Headline", sans-serif;
-    --text-name: "Gelasio", serif;
     --text-body: "Mozilla Text", sans-serif;
 }
