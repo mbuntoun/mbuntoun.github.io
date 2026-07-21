@@ -1,4 +1,4 @@
-const Courses = () => {
+const Teaching = () => {
     const data = [
         {
             "title": "ITM 454 - Natural Language Processing",
@@ -48,4 +48,4 @@ const Courses = () => {
     )
 }
 
-export default Courses
+export default Teaching

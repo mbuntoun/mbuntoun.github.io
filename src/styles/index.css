@@ -85,7 +85,15 @@ hr {
 /* Education section */
 .education {
     padding: 24px 36px;
-    list-style: none;
+
+    h2 {
+        margin-bottom: 12px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    } 
 
     li {
         margin-bottom: 24px;
