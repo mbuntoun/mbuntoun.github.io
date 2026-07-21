@@ -93,7 +93,6 @@ hr {
         border: 2px solid var(--color-dark-blue);
         border-radius: 5px;
         box-shadow: 5px 5px 5px var(--color-dark-blue);
-        /* background-color: #FFEBD3; */
 
         &:last-child {
             margin-bottom: 0;;
@@ -115,6 +114,32 @@ hr {
     }
 }
 
+/* Courses Page */
+.courses {
+    padding: 24px 36px;
+
+    h2 {
+        text-align: center;
+    }
+
+    ul {
+        background-color: #FFEBD3;
+        padding: 24px 36px;
+        text-align: justify;
+        p:first-child {
+            margin-bottom: 8px;
+        }
+    }
+
+    li {
+        margin-bottom: 24px;
+
+        &:last-child {
+            margin-bottom: 0;;
+        }
+    }
+}
+
 /* Padding adjustments for mobile */
 @media screen and (max-width: 500px) {
     .profile {
@@ -123,5 +148,14 @@ hr {
     
     .education {
         padding: 24px;
+    }
+
+    .courses {
+        padding: 24px;
+        ul {
+            /* list-style: none; */
+            padding: 24px 24px 24px 36px;
+            text-align: left;
+        }
     }
 }
