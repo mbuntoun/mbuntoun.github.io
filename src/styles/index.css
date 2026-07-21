@@ -14,6 +14,7 @@ body {
 
 /* Navigation */
 header nav ul {
+    padding: 0;
     list-style: none;
     display: flex;
     justify-content: center;
@@ -46,7 +47,7 @@ hr {
 /* Profile section */
 .profile {
     display: flex;
-    padding: 36px;
+    padding: 24px 36px;
     gap: 24px;
 
     .pic {
@@ -111,5 +112,16 @@ hr {
 
     h4, p {
         margin-bottom: 8px;
+    }
+}
+
+/* Padding adjustments for mobile */
+@media screen and (max-width: 500px) {
+    .profile {
+        padding: 24px;
+    }
+    
+    .education {
+        padding: 24px;
     }
 }

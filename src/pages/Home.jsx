@@ -4,7 +4,6 @@ import Education from "../components/Education"
 const Home = () => (
     <main>
         <Profile />
-        <hr />
         <Education />
     </main>
 )
