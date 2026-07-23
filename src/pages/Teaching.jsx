@@ -27,10 +27,18 @@ const Teaching = () => {
         {
             "title": "COSC 251 - Data Structure",
             "concepts": "Data Structure using Java, Arrays, Linked List, Binary Tree, Hash Table, Heaps, Graphs"
+        },
+        {
+            "title": "ICT 301 - Software Requirements, Analysis & Design",
+            "concepts": "Software Development Life Cycle (SDLC), Agile Development, Requirements Modelling"
+        },
+        {
+            "title": "ITM 201 - Java Programming I",
+            "concepts": "Elementary Java Programming, Variables, Conditional Statements, Loops, Functions, Arrays, JavaFX"
         }
-        // To add more courses
-        // SRAD, Java I, Computer Science Survey, ITEC
     ]
+
+    // To also add courses from other uni
 
     return (
         <main className="courses">
@@ -40,7 +48,7 @@ const Teaching = () => {
                 {data.map((course, index) => (
                     <li key={index}>
                         <p><strong>{course.title}</strong></p>
-                        <p><b>Concepts covered:</b> {course.concepts}</p>
+                        <p><b>Concepts covered:</b> {course.concepts}.</p>
                     </li>
                 ))}
             </ul>
