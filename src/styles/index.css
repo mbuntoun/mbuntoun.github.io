@@ -47,7 +47,7 @@ hr {
 /* Profile section */
 .profile {
     display: flex;
-    padding: 24px 36px;
+    padding: var(--global-padding);
     gap: 24px;
 
     .pic {
@@ -84,7 +84,7 @@ hr {
 
 /* Education section */
 .education {
-    padding: 24px 36px;
+    padding: var(--global-padding);
 
     h2 {
         margin-bottom: 12px;
@@ -99,8 +99,6 @@ hr {
         margin-bottom: 24px;
         padding: 16px;
         border: 2px solid var(--color-dark-blue);
-        border-radius: 5px;
-        box-shadow: 5px 5px 5px var(--color-dark-blue);
 
         &:last-child {
             margin-bottom: 0;;
@@ -124,7 +122,7 @@ hr {
 
 /* Courses Page */
 .courses {
-    padding: 24px 36px;
+    padding: var(--global-padding);
 
     h2 {
         text-align: center;
@@ -132,7 +130,7 @@ hr {
 
     ul {
         background-color: #FFEBD3;
-        padding: 24px 36px;
+        padding: var(--global-padding);
         text-align: justify;
         p:first-child {
             margin-bottom: 8px;
@@ -148,22 +146,36 @@ hr {
     }
 }
 
+/* Community Section */
+.community {
+    padding: var(--global-padding);
+
+    ul {
+        border: 2px solid var(--color-nav-bg);
+        padding: var(--global-padding);
+        text-align: justify;
+    }
+
+    li {
+        margin-bottom: 24px;
+
+        &:last-child {
+            margin-bottom: 0;;
+        }
+    }
+}
+
 /* Padding adjustments for mobile */
 @media screen and (max-width: 500px) {
-    .profile {
-        padding: 24px;
-    }
-    
-    .education {
+    .profile, .education, .community, .courses {
         padding: 24px;
     }
 
-    .courses {
-        padding: 24px;
+    .courses, .community {
         ul {
-            /* list-style: none; */
             padding: 24px 24px 24px 36px;
             text-align: left;
         }
     }
 }
+

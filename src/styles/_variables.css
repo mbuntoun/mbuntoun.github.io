@@ -7,4 +7,6 @@
 
     --text-nav: "Stack Sans Headline", sans-serif;
     --text-body: "Mozilla Text", sans-serif;
+
+    --global-padding: 24px 36px;
 }
