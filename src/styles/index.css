@@ -99,6 +99,18 @@ hr {
             text-align: left;
             color: var(--color-nav-bg);
         }
+        mark {
+            background-color: var(--color-light-pink);
+
+            &:hover {
+                background-color: var(--color-nav-bg);
+            }
+
+            a {
+                color: black;
+                text-decoration: underline;
+            }
+        }
     }
 
     @media screen and (max-width: 768px) {
