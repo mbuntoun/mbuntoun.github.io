@@ -53,11 +53,43 @@ hr {
     .pic {
         width: 250px;
         height: 250px;
-        background-image: url("../assets/profile-pic.jpeg");
-        background-position: center;
-        background-size: cover;
-        border-radius: 50%;
-        border: 5px solid var(--color-light-pink);
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        place-items: center;
+
+        .outer-diamond, .second-diamond, .mask-diamond {
+            grid-area: 1 / 1;
+            width: 100%;
+            height: 100%;
+        }
+
+        .outer-diamond {
+            background-color: var(--color-nav-bg);
+            transform: rotate(15deg) scale(0.7);
+        }
+
+        .second-diamond {
+            background-color: var(--color-dark-blue);
+            transform: rotate(30deg) scale(0.7);
+        }
+
+        .mask-diamond {
+            transform: rotate(45deg) scale(0.7);
+            overflow: hidden;
+            border: 8px solid var(--color-light-pink);
+        }
+
+        .mask-diamond img {
+            position: relative;
+            top: -25%;
+            left: -25%;
+            width: 150%;
+            height: 150%;
+            object-fit: cover;
+            transform: rotate(-45deg);
+        }
     }
 
     .summary {
