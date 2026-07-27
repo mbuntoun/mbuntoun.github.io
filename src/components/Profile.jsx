@@ -21,8 +21,7 @@ const Profile = () => (
             <br />
             <p>
                 As a women in tech, I am very passionate in making computing education accessible to women and other underrepresented groups.
-                In addition, I am committed to developing digital talents in Cambodia through <mark><Link to="/teaching">teaching</Link></mark> ,  
-                <mark><Link to="/community-services">mentoring, and public engagement</Link></mark>.
+                In addition, I am committed to developing digital talents in Cambodia through <mark><Link to="/teaching">teaching</Link></mark>, <mark><Link to="/community-services">mentoring, and public engagement</Link></mark>.
             </p>           
         </div>
     </section>
