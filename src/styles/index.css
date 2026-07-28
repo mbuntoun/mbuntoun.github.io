@@ -151,6 +151,8 @@ hr {
         margin-bottom: 24px;
         padding: 16px;
         border: 2px solid var(--color-dark-blue);
+        box-shadow: 5px 5px var(--color-dark-blue);
+        background-color: var(--color-ivory);
 
         &:last-child {
             margin-bottom: 0;;
@@ -181,7 +183,8 @@ hr {
     }
 
     ul {
-        background-color: #FFEBD3;
+        background-color: var(--color-ivory);
+        box-shadow: 2px 2px 5px 5px var(--color-light-pink);
         padding: var(--global-padding);
         text-align: justify;
         p:first-child {
@@ -204,6 +207,8 @@ hr {
 
     ul {
         border: 2px solid var(--color-nav-bg);
+        box-shadow: 5px 5px var(--color-nav-bg);
+        background-color: var(--color-ivory);
         padding: var(--global-padding);
         text-align: justify;
     }
