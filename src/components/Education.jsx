@@ -36,8 +36,7 @@ const Education = () => {
             <ul>
                 {data.map((edu, index) => (
                     <li key={index}>
-                        <h4><a href={edu.url} target="_blank">{edu.university} </a>
-                            | {edu.location}</h4>
+                        <h4><a href={edu.url} target="_blank">{edu.university}</a> | {edu.location}</h4>
                         <p><strong>{edu.degree}</strong> | {edu.graduation}</p>
                         <p><strong>CGPA: {edu.gpa}/4.0</strong></p>
                         <p><b>Courses:</b> {edu.courses.join(", ")}</p>

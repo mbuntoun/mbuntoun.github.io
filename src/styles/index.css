@@ -153,9 +153,14 @@ hr {
         border: 2px solid var(--color-dark-blue);
         box-shadow: 5px 5px var(--color-dark-blue);
         background-color: var(--color-ivory);
+        transition: transform ease 0.5s;
 
         &:last-child {
             margin-bottom: 0;;
+        }
+
+        &:hover {
+            transform: scale(1.03);
         }
     }
 
@@ -163,9 +168,7 @@ hr {
         color: var(--color-dark-blue);
         a {
             color: var(--color-dark-blue);
-            &:hover {
-                text-decoration: underline;
-            }
+            text-decoration: underline;
         }
     }
 
