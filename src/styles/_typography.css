@@ -11,6 +11,10 @@ a {
     text-decoration: none;
 }
 
+mark {
+    background-color: var(--color-light-pink);
+}
+
 .bold {
     font-weight: bold;
 }
